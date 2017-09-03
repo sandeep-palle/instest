@@ -39,7 +39,7 @@ public static WebDriver driver = null;
 	  driver.findElement(By.name("txtUserName")).sendKeys("admin");
 	  driver.findElement(By.name("txtPassword")).sendKeys("admin");
 	  driver.findElement(By.name("Submit")).click();
-	  Weblement element = driver.findElement(By.xpath("//*[@id=\"option-menu\"]/li[1]"));
+	  WebElement element = driver.findElement(By.xpath("//*[@id=\"option-menu\"]/li[1]"));
 	  String name = element.getText();
 	 // Assert.assertEquals(name, "Welcome admin");
 //	  String name = driver.getTitle();
